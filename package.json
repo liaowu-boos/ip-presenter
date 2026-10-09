@@ -1,0 +1,16 @@
+{
+  "name": "ip-presenter",
+  "version": "0.6.0",
+  "private": true,
+  "type": "module",
+  "description": "Local interactive avatar presenter with real-time voice and grounded Q&A",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "python3 scripts/build_preview.py",
+    "check:release": "python3 scripts/check_public_release.py"
+  }
+}

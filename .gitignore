@@ -1,0 +1,44 @@
+# Credentials and machine-local state
+.env
+.env.*
+!.env.example
+.runtime/
+.backups/
+*.pem
+*.key
+*.ses
+# Environments / caches
+.venv/
+.venv-*/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+*.log
+# Private or generated materials (including embedded project exports)
+/assets/
+/frontend/assets/
+/frontend/projects/
+/docs/visual-review/
+/outputs/
+/dist/
+/releases/
+*.ip-presenter.json
+/直接预览.html
+*.mp4
+*.webm
+*.mov
+*.wav
+*.mp3
+*.onnx
+*.safetensors
+*.pth
+*.pt
+*.mlpackage/
+*.mlmodelc/

@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=9,<10
+# Browser checks are optional: pip install -r requirements-browser.txt
