@@ -1,6 +1,6 @@
 # 发布版验证记录
 
-验证日期：2026-10-09。环境：macOS、Python 3.13，使用本机已安装的 Python 依赖环境；未进行全新环境联网安装。GitHub Actions 已配置，尚未在远程执行。
+验证日期：2026-10-09。环境：macOS、Python 3.13，使用本机已安装的 Python 依赖环境；未进行全新环境联网安装。GitHub Actions 已在首次公开提交上通过：[Core checks #1](https://github.com/liaowu-boos/ip-presenter/actions/runs/37950927944)。云端工作流使用 Ubuntu、Python 3.13、Node.js 22，联网安装开发依赖后执行内容检查、核心测试和构建。
 
 - README 指定的 JavaScript 核心测试：167 项通过，0 跳过。
 - README 指定的 Python 核心测试：107 项通过。存在一项来自 Starlette / AnyIO 的弃用提示。
@@ -12,3 +12,7 @@
 未验收：真实云端语音、账户模型资格、麦克风与回声、精细嘴型、Windows / Linux 实机运行。发布检查不等同于完整安全或依赖许可证审计。
 
 公开范围重新审核后只保留通用工作台代码，原项目实验页面、私有素材路径及设计专有名称已排除。采用独立公开快照导出，避免再次从私人开发目录批量收集文件。
+
+## 2026-10-13 · 本地复核
+
+本次对比未发现首次发布之后新增的功能代码，更新限于说明文档与更新记录。复核结果：167 项 JavaScript、107 项 Python 测试通过；公开内容检查、离线构建和本地 Markdown 链接检查通过。Python 测试仍有一项已知 Starlette / AnyIO 弃用提示。没有重新进行真实云端语音或麦克风验收。
